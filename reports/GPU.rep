@@ -1,0 +1,219 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GPU
+Version: K-2015.06-SP1
+Date   : Tue Dec  5 23:26:14 2017
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: decode/end1_c_reg[8]
+              (rising edge-triggered flip-flop)
+  Endpoint: HADDR[20] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  decode/end1_c_reg[8]/CLK (DFFSR)                        0.00       0.00 r
+  decode/end1_c_reg[8]/Q (DFFSR)                          0.91       0.91 f
+  decode/end1[8] (decode_pro)                             0.00       0.91 f
+  render/end_l[8] (render_module)                         0.00       0.91 f
+  render/B/end_x[0] (bresenham)                           0.00       0.91 f
+  render/B/U582/Y (INVX1)                                 0.35       1.26 r
+  render/B/U573/Y (NAND2X1)                               0.14       1.40 f
+  render/B/U569/Y (OAI21X1)                               0.16       1.55 r
+  render/B/U568/Y (OAI21X1)                               0.11       1.67 f
+  render/B/U566/Y (OAI22X1)                               0.19       1.85 r
+  render/B/U564/Y (INVX1)                                 0.16       2.01 f
+  render/B/U562/Y (OAI21X1)                               0.13       2.14 r
+  render/B/U561/Y (OAI21X1)                               0.11       2.25 f
+  render/B/U559/Y (OAI22X1)                               0.20       2.45 r
+  render/B/U557/Y (INVX1)                                 0.16       2.60 f
+  render/B/U555/Y (OAI21X1)                               0.13       2.73 r
+  render/B/U554/Y (OAI21X1)                               0.11       2.85 f
+  render/B/U552/Y (OAI22X1)                               0.20       3.04 r
+  render/B/U550/Y (INVX1)                                 0.16       3.20 f
+  render/B/U548/Y (OAI21X1)                               0.13       3.33 r
+  render/B/U547/Y (OAI21X1)                               0.11       3.44 f
+  render/B/U545/Y (OAI22X1)                               0.34       3.78 r
+  render/B/U68/Y (INVX2)                                  0.76       4.54 f
+  render/B/U535/Y (MUX2X1)                                0.34       4.87 r
+  render/B/r515/B[0] (bresenham_DW01_sub_5)               0.00       4.87 r
+  render/B/r515/U4/Y (INVX2)                              0.14       5.01 f
+  render/B/r515/U1/Y (OR2X1)                              0.31       5.32 f
+  render/B/r515/U2_1/YC (FAX1)                            0.45       5.77 f
+  render/B/r515/U2_2/YC (FAX1)                            0.45       6.22 f
+  render/B/r515/U2_3/YC (FAX1)                            0.45       6.68 f
+  render/B/r515/U2_4/YC (FAX1)                            0.45       7.13 f
+  render/B/r515/U2_5/YC (FAX1)                            0.45       7.58 f
+  render/B/r515/U2_6/YC (FAX1)                            0.45       8.04 f
+  render/B/r515/U2_7/YS (FAX1)                            0.61       8.64 f
+  render/B/r515/DIFF[7] (bresenham_DW01_sub_5)            0.00       8.64 f
+  render/B/U453/Y (AND2X1)                                0.37       9.01 f
+  render/B/U452/Y (XNOR2X1)                               0.33       9.34 r
+  render/B/U451/Y (INVX1)                                 0.15       9.49 f
+  render/B/U402/Y (OAI21X1)                               0.13       9.62 r
+  render/B/U401/Y (OAI21X1)                               0.09       9.71 f
+  render/B/U400/Y (OAI21X1)                               0.35      10.06 r
+  render/B/U357/Y (NOR2X1)                                0.16      10.22 f
+  render/B/U21/Y (BUFX2)                                  1.08      11.30 f
+  render/B/U356/Y (NOR2X1)                                0.13      11.43 r
+  render/B/U14/Y (BUFX2)                                  0.89      12.32 r
+  render/B/U355/Y (AOI22X1)                               0.26      12.58 f
+  render/B/U351/Y (NAND2X1)                               0.42      13.00 r
+  render/B/U350/Y (INVX1)                                 0.26      13.25 f
+  render/B/U346/Y (MUX2X1)                                0.31      13.56 r
+  render/B/r533/B[0] (bresenham_DW01_sub_1)               0.00      13.56 r
+  render/B/r533/U3/Y (INVX2)                              0.16      13.72 f
+  render/B/r533/U1/Y (OR2X1)                              0.31      14.04 f
+  render/B/r533/U2_1/YC (FAX1)                            0.45      14.48 f
+  render/B/r533/U2_2/YC (FAX1)                            0.45      14.94 f
+  render/B/r533/U2_3/YC (FAX1)                            0.45      15.39 f
+  render/B/r533/U2_4/YS (FAX1)                            0.44      15.83 r
+  render/B/r533/DIFF[4] (bresenham_DW01_sub_1)            0.00      15.83 r
+  render/B/r535/B[4] (bresenham_DW01_sub_0)               0.00      15.83 r
+  render/B/r535/U6/Y (INVX2)                              0.15      15.98 f
+  render/B/r535/U2_4/YS (FAX1)                            0.42      16.41 f
+  render/B/r535/DIFF[4] (bresenham_DW01_sub_0)            0.00      16.41 f
+  render/B/U266/Y (AOI22X1)                               0.14      16.54 r
+  render/B/U265/Y (OAI21X1)                               0.11      16.66 f
+  render/B/by[4] (bresenham)                              0.00      16.66 f
+  render/U8/Y (MUX2X1)                                    0.13      16.79 r
+  render/U7/Y (INVX1)                                     0.51      17.29 f
+  render/y[4] (render_module)                             0.00      17.29 f
+  memmanger/y[4] (memoryManager)                          0.00      17.29 f
+  memmanger/U67/Y (OAI21X1)                               0.24      17.53 r
+  memmanger/U66/Y (OAI21X1)                               0.24      17.77 f
+  memmanger/U58/Y (OAI21X1)                               0.16      17.93 r
+  memmanger/U57/Y (INVX1)                                 0.13      18.06 f
+  memmanger/U56/Y (AOI21X1)                               0.13      18.20 r
+  memmanger/U55/Y (INVX1)                                 0.27      18.47 f
+  memmanger/U42/Y (OAI21X1)                               0.16      18.63 r
+  memmanger/U41/Y (OAI21X1)                               0.22      18.85 f
+  memmanger/U33/Y (OAI21X1)                               0.17      19.02 r
+  memmanger/U32/Y (OAI21X1)                               0.22      19.23 f
+  memmanger/U23/Y (NAND2X1)                               0.21      19.44 r
+  memmanger/U22/Y (XNOR2X1)                               0.28      19.72 r
+  memmanger/U16/Y (NAND3X1)                               0.11      19.83 f
+  memmanger/U15/Y (AND2X1)                                0.38      20.21 f
+  memmanger/U9/Y (NAND3X1)                                0.27      20.48 r
+  memmanger/U7/Y (NOR2X1)                                 0.14      20.63 f
+  memmanger/addr[20] (memoryManager)                      0.00      20.63 f
+  ahb/pixel_address[20] (AHB_MasterInterface)             0.00      20.63 f
+  ahb/U65/Y (AND2X1)                                      0.13      20.76 f
+  ahb/HADDR[20] (AHB_MasterInterface)                     0.00      20.76 f
+  HADDR[20] (out)                                         0.00      20.76 f
+  data arrival time                                                 20.76
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : GPU
+Version: K-2015.06-SP1
+Date   : Tue Dec  5 23:26:14 2017
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                         1591
+Number of nets:                          4063
+Number of cells:                         2526
+Number of combinational cells:           2074
+Number of sequential cells:               415
+Number of macros/black boxes:               0
+Number of buf/inv:                        600
+Number of references:                       6
+
+Combinational area:             712818.000000
+Buf/Inv area:                    87984.000000
+Noncombinational area:          270864.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                983682.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : GPU
+Version: K-2015.06-SP1
+Date   : Tue Dec  5 23:26:15 2017
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+GPU                                       4.663   21.834  309.786   26.496 100.0
+  ctlr (controller)                    7.39e-05    0.103    0.694    0.103   0.4
+  memmanger (memoryManager)            3.09e-05    0.103    9.878    0.103   0.4
+  ahb (AHB_MasterInterface)               0.000    0.205    9.252    0.205   0.8
+  render (render_module)                  0.500    8.048  201.969    8.548  32.3
+    C (clear)                             0.000    1.945   27.488    1.945   7.3
+      Counter2 (flex_counter_NUM_CNT_BITS8)
+                                          0.000    0.921   12.632    0.921   3.5
+        add_48 (flex_counter_NUM_CNT_BITS8_DW01_inc_0)
+                                          0.000    0.000    1.807 1.81e-06   0.0
+      Counter1 (flex_counter_NUM_CNT_BITS9)
+                                          0.000    1.024   14.333    1.024   3.9
+        add_48 (flex_counter_NUM_CNT_BITS9_DW01_inc_0)
+                                          0.000    0.000    2.073 2.07e-06   0.0
+    B (bresenham)                         0.499    5.591  166.259    6.091  23.0
+      r519 (bresenham_DW01_sub_6)      2.53e-03 2.55e-03    3.112 5.08e-03   0.0
+      r515 (bresenham_DW01_sub_5)      3.40e-03 3.32e-03    3.507 6.73e-03   0.0
+      sub_223 (bresenham_DW01_sub_4)      0.000    0.000    3.476 3.48e-06   0.0
+      sub_223_2 (bresenham_DW01_sub_3)    0.000    0.000    3.476 3.48e-06   0.0
+      r480 (bresenham_DW01_add_11)     6.08e-02 9.58e-02    5.762    0.157   0.6
+      add_142 (bresenham_DW01_inc_1)      0.000    0.000    2.073 2.07e-06   0.0
+      r531 (bresenham_DW_div_uns_0)       0.141    0.111   66.744    0.253   1.0
+      r533 (bresenham_DW01_sub_1)         0.000    0.000    3.081 3.08e-06   0.0
+      r535 (bresenham_DW01_sub_0)         0.000    0.000    3.081 3.08e-06   0.0
+      add_160 (bresenham_DW01_inc_0)      0.000    0.000    2.073 2.07e-06   0.0
+    R (render_rcu)                     3.75e-04    0.512    5.490    0.513   1.9
+  decode (decode_pro)                     3.742   12.461   82.241   16.203  61.2
+    add_180 (decode_pro_DW01_add_3)    3.79e-03 2.75e-02    3.212 3.13e-02   0.1
+    add_181 (decode_pro_DW01_add_2)    3.14e-03 2.29e-02    2.848 2.60e-02   0.1
+    add_192 (decode_pro_DW01_add_1)    3.74e-03 2.74e-02    3.212 3.11e-02   0.1
+    add_193 (decode_pro_DW01_add_0)    3.02e-03 2.22e-02    2.848 2.52e-02   0.1
+  apb (APB_SlaveInterface)                0.421    0.914    5.751    1.335   5.0
+1

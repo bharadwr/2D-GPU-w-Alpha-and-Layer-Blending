@@ -1,0 +1,924 @@
+Synthesizing design: GPU.sv
+dc_shell-t -x "source -echo do_mapping.tcl"
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP1 for linux64 - Jul 21, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecegrid/a/mg101/.synopsys_dv_prefs.tcl
+# Step 1:  Read in the source file
+analyze -format sverilog -lib WORK {AHB_MasterInterface.sv APB_SlaveInterface.sv bresenham.sv clear.sv controller.sv decode_pro.sv flex_counter.sv memoryManager.sv render_module.sv render_rcu.sv GPU.sv}
+Running PRESTO HDLC
+Compiling source file ./source/AHB_MasterInterface.sv
+Compiling source file ./source/APB_SlaveInterface.sv
+Compiling source file ./source/bresenham.sv
+Warning:  ./source/bresenham.sv:109: The value 00800 is too large for the numeric data type being used (VER-1)
+Compiling source file ./source/clear.sv
+Compiling source file ./source/controller.sv
+Compiling source file ./source/decode_pro.sv
+Compiling source file ./source/flex_counter.sv
+Compiling source file ./source/memoryManager.sv
+Compiling source file ./source/render_module.sv
+Compiling source file ./source/render_rcu.sv
+Compiling source file ./source/GPU.sv
+Warning:  ./source/GPU.sv:58: the undeclared symbol 'received_op' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/dw_foundation.sldb'
+elaborate GPU -lib WORK
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'GPU'.
+Information: Building the design 'APB_SlaveInterface'. (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'./source/APB_SlaveInterface.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 80 in file
+	'./source/APB_SlaveInterface.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine APB_SlaveInterface line 67 in file
+		'./source/APB_SlaveInterface.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'decode_pro'. (HDL-193)
+
+Statistics for case statements in always block at line 73 in file
+	'./source/decode_pro.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            86            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine decode_pro line 46 in file
+		'./source/decode_pro.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  flip_buffer_c_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     start_c_reg     | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     end1_c_reg      | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     color_c_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      op_c_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   commandreg_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  received_op_c_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'render_module'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'AHB_MasterInterface'. (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'./source/AHB_MasterInterface.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 68 in file
+	'./source/AHB_MasterInterface.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            75            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine AHB_MasterInterface line 55 in file
+		'./source/AHB_MasterInterface.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'memoryManager'. (HDL-193)
+
+Inferred memory devices in process
+	in routine memoryManager line 32 in file
+		'./source/memoryManager.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    addr_sel_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'controller'. (HDL-193)
+
+Statistics for case statements in always block at line 37 in file
+	'./source/controller.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine controller line 24 in file
+		'./source/controller.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     c_state_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'render_rcu'. (HDL-193)
+
+Statistics for case statements in always block at line 39 in file
+	'./source/render_rcu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            42            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 117 in file
+	'./source/render_rcu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           125            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine render_rcu line 27 in file
+		'./source/render_rcu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine render_rcu line 165 in file
+		'./source/render_rcu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   render_done_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'bresenham'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bresenham line 105 in file
+		'./source/bresenham.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    gradient_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    gradient_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bresenham line 120 in file
+		'./source/bresenham.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    bx_local_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bresenham line 130 in file
+		'./source/bresenham.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    by_local_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bresenham line 179 in file
+		'./source/bresenham.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      error_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'clear'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'flex_counter' instantiated from design 'clear' with
+	the parameters "9". (HDL-193)
+
+Inferred memory devices in process
+	in routine flex_counter_NUM_CNT_BITS9 line 26 in file
+		'./source/flex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    count_out_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine flex_counter_NUM_CNT_BITS9 line 55 in file
+		'./source/flex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'flex_counter' instantiated from design 'clear' with
+	the parameters "8". (HDL-193)
+
+Inferred memory devices in process
+	in routine flex_counter_NUM_CNT_BITS8 line 26 in file
+		'./source/flex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    count_out_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine flex_counter_NUM_CNT_BITS8 line 55 in file
+		'./source/flex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+uniquify
+# Step 2: Set design constraints
+# Uncomment below to set timing, area, power, etc. constraints
+# set_max_delay <delay> -from "<input>" -to "<output>"
+# set_max_area <area>
+# set_max_total_power <power> mW
+# Step 3: Compile the design
+compile -map_effort medium
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.1 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.1 |     *     |
+============================================================================
+
+
+Information: There are 172 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'controller'
+Information: The register 'c_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'c_state_reg[1]' is a constant and will be removed. (OPT-1206)
+  Processing 'memoryManager'
+  Processing 'AHB_MasterInterface'
+  Processing 'flex_counter_NUM_CNT_BITS8'
+Information: Added key list 'DesignWare' to design 'flex_counter_NUM_CNT_BITS8'. (DDB-72)
+  Processing 'flex_counter_NUM_CNT_BITS9'
+Information: Added key list 'DesignWare' to design 'flex_counter_NUM_CNT_BITS9'. (DDB-72)
+  Processing 'clear'
+  Processing 'bresenham'
+  Processing 'render_rcu'
+  Processing 'render_module'
+  Processing 'decode_pro'
+  Processing 'APB_SlaveInterface'
+  Processing 'GPU'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'GPU' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'memoryManager_DW01_add_0'
+  Processing 'memoryManager_DW01_add_1'
+  Mapping 'memoryManager_DW_mult_uns_0'
+  Processing 'flex_counter_NUM_CNT_BITS8_DW01_inc_0'
+  Processing 'flex_counter_NUM_CNT_BITS8_DW01_dec_0'
+  Processing 'flex_counter_NUM_CNT_BITS9_DW01_inc_0'
+  Processing 'flex_counter_NUM_CNT_BITS9_DW01_dec_0'
+  Processing 'bresenham_DW01_cmp6_0'
+  Processing 'bresenham_DW01_inc_0'
+  Processing 'bresenham_DW01_sub_0'
+  Processing 'bresenham_DW01_sub_1'
+  Processing 'bresenham_DW_div_uns_0'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'bresenham_DW01_add_0'
+  Mapping 'bresenham_DW01_add_1'
+  Mapping 'bresenham_DW01_add_2'
+  Mapping 'bresenham_DW01_add_3'
+  Mapping 'bresenham_DW01_add_4'
+  Mapping 'bresenham_DW01_add_5'
+  Mapping 'bresenham_DW01_add_6'
+  Mapping 'bresenham_DW01_add_7'
+  Mapping 'bresenham_DW01_add_8'
+  Mapping 'bresenham_DW01_add_9'
+  Mapping 'bresenham_DW01_add_10'
+  Processing 'bresenham_DW01_inc_1'
+  Processing 'bresenham_DW01_sub_2'
+  Processing 'bresenham_DW01_add_11'
+  Processing 'bresenham_DW01_cmp6_1'
+  Processing 'bresenham_DW01_sub_3'
+  Processing 'bresenham_DW01_sub_4'
+  Processing 'bresenham_DW01_cmp2_0'
+  Processing 'bresenham_DW01_inc_2'
+  Processing 'bresenham_DW01_sub_5'
+  Processing 'bresenham_DW01_cmp2_1'
+  Processing 'bresenham_DW01_inc_3'
+  Processing 'bresenham_DW01_sub_6'
+  Processing 'bresenham_DW01_cmp2_2'
+  Processing 'decode_pro_DW01_add_0'
+  Processing 'decode_pro_DW01_add_1'
+  Processing 'decode_pro_DW01_add_2'
+  Processing 'decode_pro_DW01_add_3'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'memoryManager'. (DDB-72)
+  Structuring 'flex_counter_NUM_CNT_BITS8'
+  Mapping 'flex_counter_NUM_CNT_BITS8'
+  Structuring 'flex_counter_NUM_CNT_BITS9'
+  Mapping 'flex_counter_NUM_CNT_BITS9'
+  Structuring 'clear'
+  Mapping 'clear'
+  Structuring 'bresenham'
+  Mapping 'bresenham'
+  Structuring 'render_rcu'
+  Mapping 'render_rcu'
+  Structuring 'controller'
+  Mapping 'controller'
+  Structuring 'memoryManager'
+  Mapping 'memoryManager'
+  Structuring 'AHB_MasterInterface'
+  Mapping 'AHB_MasterInterface'
+  Structuring 'render_module'
+  Mapping 'render_module'
+  Structuring 'decode_pro'
+  Mapping 'decode_pro'
+  Structuring 'APB_SlaveInterface'
+  Mapping 'APB_SlaveInterface'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  980469.0      0.00       0.0      10.8                          
+    0:00:06  982980.0      0.00       0.0       4.1                          
+    0:00:06  983628.0      0.00       0.0       1.3                          
+    0:00:06  984483.0      0.00       0.0       0.6                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984906.0      0.00       0.0       0.0                          
+    0:00:06  984258.0      0.00       0.0       0.0                          
+    0:00:06  984114.0      0.00       0.0       0.0                          
+    0:00:06  983970.0      0.00       0.0       0.0                          
+    0:00:06  983826.0      0.00       0.0       0.0                          
+    0:00:06  983682.0      0.00       0.0       0.0                          
+    0:00:06  983682.0      0.00       0.0       0.0                          
+    0:00:06  983682.0      0.00       0.0       0.0                          
+    0:00:07  983682.0      0.00       0.0       0.0                          
+    0:00:07  983682.0      0.00       0.0       0.0                          
+    0:00:07  983682.0      0.00       0.0       0.0                          
+    0:00:07  983682.0      0.00       0.0       0.0                          
+    0:00:07  983682.0      0.00       0.0       0.0                          
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+# Step 4: Output reports
+report_timing -path full -delay max -max_paths 1 -nworst 1 > reports/GPU.rep
+report_area >> reports/GPU.rep
+report_power -hier >> reports/GPU.rep
+# Step 5: Output final VHDL and Verilog files
+write_file -format verilog -hierarchy -output "mapped/GPU.v"
+Writing verilog file '/home/ecegrid/a/mg101/ece337/GPU/mapped/GPU.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 52 nets to module GPU using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+echo "\nScript Done\n"
+
+Script Done
+
+echo "\nChecking Design\n"
+
+Checking Design
+
+check_design
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP1
+Date:        Tue Dec  5 23:26:15 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    210
+    Unconnected ports (LINT-28)                                    70
+    Feedthrough (LINT-29)                                          38
+    Shorted outputs (LINT-31)                                      48
+    Constant outputs (LINT-52)                                     54
+
+Cells                                                             102
+    Connected to power or ground (LINT-32)                         91
+    Nets connected to multiple pins on same cell (LINT-33)         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'decode_pro', port 'command_bus[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro', port 'command_bus[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro', port 'command_bus[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro', port 'command_bus[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro', port 'command_bus[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'a[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'divide_by_0' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW_div_uns_0', port 'remainder[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_10', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_11', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_add_11', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_3', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_3', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_4', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_4', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_5', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_5', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_5', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_5', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_6', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_6', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_6', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'bresenham_DW01_sub_6', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_3', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_pro_DW01_add_3', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[31]' is connected directly to output port 'command_bus[31]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[30]' is connected directly to output port 'command_bus[30]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[29]' is connected directly to output port 'command_bus[29]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[28]' is connected directly to output port 'command_bus[28]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[27]' is connected directly to output port 'command_bus[27]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[26]' is connected directly to output port 'command_bus[26]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[25]' is connected directly to output port 'command_bus[25]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[24]' is connected directly to output port 'command_bus[24]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[23]' is connected directly to output port 'command_bus[23]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[22]' is connected directly to output port 'command_bus[22]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[21]' is connected directly to output port 'command_bus[21]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[20]' is connected directly to output port 'command_bus[20]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[19]' is connected directly to output port 'command_bus[19]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[18]' is connected directly to output port 'command_bus[18]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[17]' is connected directly to output port 'command_bus[17]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[16]' is connected directly to output port 'command_bus[16]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[15]' is connected directly to output port 'command_bus[15]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[14]' is connected directly to output port 'command_bus[14]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[13]' is connected directly to output port 'command_bus[13]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[12]' is connected directly to output port 'command_bus[12]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[11]' is connected directly to output port 'command_bus[11]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[10]' is connected directly to output port 'command_bus[10]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[9]' is connected directly to output port 'command_bus[9]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[8]' is connected directly to output port 'command_bus[8]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[7]' is connected directly to output port 'command_bus[7]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[6]' is connected directly to output port 'command_bus[6]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[5]' is connected directly to output port 'command_bus[5]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[4]' is connected directly to output port 'command_bus[4]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[3]' is connected directly to output port 'command_bus[3]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[2]' is connected directly to output port 'command_bus[2]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[1]' is connected directly to output port 'command_bus[1]'. (LINT-29)
+Warning: In design 'APB_SlaveInterface', input port 'PWDATA[0]' is connected directly to output port 'command_bus[0]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[5]' is connected directly to output port 'addr[7]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[4]' is connected directly to output port 'addr[6]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[3]' is connected directly to output port 'addr[5]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[2]' is connected directly to output port 'addr[4]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[1]' is connected directly to output port 'addr[3]'. (LINT-29)
+Warning: In design 'memoryManager', input port 'x[0]' is connected directly to output port 'addr[2]'. (LINT-29)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[24]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[25]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[26]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[27]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[28]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[29]'. (LINT-31)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to output port 'color[30]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[21]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[22]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[23]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[24]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[25]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[26]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[27]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[28]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[29]'. (LINT-31)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to output port 'addr[30]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[1]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[2]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[3]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[4]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[5]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[6]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[7]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[8]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[9]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[10]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[11]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[12]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[13]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[14]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[15]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[16]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[17]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[18]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[19]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[20]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[21]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[22]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[23]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[24]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[25]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[26]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[27]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[28]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[29]'. (LINT-31)
+Warning: In design 'controller', output port 'status[31]' is connected directly to output port 'status[30]'. (LINT-31)
+Warning: In design 'controller', output port 'status[0]' is connected directly to output port 'render_enable'. (LINT-31)
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[31]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[30]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[29]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[28]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[27]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[26]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[25]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[24]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[23]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[22]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[21]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[20]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[19]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[18]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[17]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[16]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[15]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[14]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[13]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[12]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[11]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[10]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[9]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[8]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[7]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[6]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[5]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[4]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[3]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[2]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'apb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'status_value[1]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[31]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[30]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[29]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[28]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[27]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[26]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[25]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[24]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[23]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[22]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[21]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[1]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pixel_address[0]' is connected to logic 1. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[31]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[30]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[29]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[28]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[27]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[26]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[25]' is connected to logic 0. 
+Warning: In design 'GPU', a pin on submodule 'ahb' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'color_data[24]' is connected to logic 0. 
+Warning: In design 'decode_pro', a pin on submodule 'add_193' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode_pro', a pin on submodule 'add_192' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode_pro', a pin on submodule 'add_181' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode_pro', a pin on submodule 'add_180' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r535' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r533' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[6]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[5]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[4]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[3]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[2]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[1]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r531' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[0]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r480' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'sub_223_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'sub_223' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r515' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r515' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r515' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r519' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r519' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'bresenham', a pin on submodule 'r519' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[8]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[7]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[7]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 1. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'clear', a pin on submodule 'Counter2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 1. 
+Warning: In design 'bresenham', the same net is connected to more than one pin on submodule 'r531'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'a[6]', 'a[5]'', 'a[4]', 'a[3]', 'a[2]', 'a[1]', 'a[0]'.
+Warning: In design 'bresenham', the same net is connected to more than one pin on submodule 'r531'. (LINT-33)
+   Net 'n477' is connected to pins 'b[15]', 'b[14]'', 'b[13]', 'b[12]', 'b[11]', 'b[10]'.
+Warning: In design 'bresenham', the same net is connected to more than one pin on submodule 'r515'. (LINT-33)
+   Net 'n64' is connected to pins 'A[9]', 'B[9]'', 'CI'.
+Warning: In design 'bresenham', the same net is connected to more than one pin on submodule 'r519'. (LINT-33)
+   Net 'n84' is connected to pins 'A[8]', 'B[8]'', 'CI'.
+Warning: In design 'clear', the same net is connected to more than one pin on submodule 'Counter1'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[8]', 'rollover_val[6]''.
+Warning: In design 'clear', the same net is connected to more than one pin on submodule 'Counter1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[7]', 'rollover_val[5]'', 'rollover_val[4]', 'rollover_val[3]', 'rollover_val[2]', 'rollover_val[1]', 'rollover_val[0]'.
+Warning: In design 'clear', the same net is connected to more than one pin on submodule 'Counter2'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[7]', 'rollover_val[6]'', 'rollover_val[5]', 'rollover_val[4]', 'rollover_val[0]'.
+Warning: In design 'clear', the same net is connected to more than one pin on submodule 'Counter2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[3]', 'rollover_val[2]'', 'rollover_val[1]'.
+Warning: In design 'bresenham_DW_div_uns_0', the same net is connected to more than one pin on submodule 'u_div/u_add_PartRem_1_1'. (LINT-33)
+   Net 'n154' is connected to pins 'B[13]', 'B[12]''.
+Warning: In design 'bresenham_DW_div_uns_0', the same net is connected to more than one pin on submodule 'u_div/u_add_PartRem_1_0'. (LINT-33)
+   Net 'n154' is connected to pins 'B[14]', 'B[12]''.
+Warning: In design 'bresenham_DW_div_uns_0', the same net is connected to more than one pin on submodule 'u_div/u_add_PartRem_1_0'. (LINT-33)
+   Net 'n153' is connected to pins 'B[13]', 'B[11]''.
+Warning: In design 'GPU', output port 'HWRITE' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[28]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[27]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[26]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode_pro', output port 'color[24]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AHB_MasterInterface', output port 'HWRITE' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[28]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[27]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[26]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[24]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[23]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[22]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[21]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'memoryManager', output port 'addr[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'controller', output port 'status[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[28]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[27]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[26]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[24]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[23]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[22]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[21]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[20]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[19]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[18]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[17]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[16]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'controller', output port 'status[1]' is connected directly to 'logic 0'. (LINT-52)
+quit
+
+Thank you...
+Done
+
+

@@ -1,0 +1,930 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps mapped_work.tb_GPU 
+# Start time: 13:19:53 on Dec 06,2017
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_GPU(fast)
+# Loading work.GPU(fast)
+# Loading work.APB_SlaveInterface(fast)
+# Loading work.decode_pro(fast)
+# Loading work.decode_pro_DW01_add_0(fast)
+# Loading work.decode_pro_DW01_add_1(fast)
+# Loading work.decode_pro_DW01_add_2(fast)
+# Loading work.decode_pro_DW01_add_3(fast)
+# Loading work.render_module(fast)
+# Loading work.render_rcu(fast)
+# Loading work.bresenham(fast)
+# Loading work.bresenham_DW01_inc_0(fast)
+# Loading work.bresenham_DW01_sub_0(fast)
+# Loading work.bresenham_DW01_sub_1(fast)
+# Loading work.bresenham_DW_div_uns_0(fast)
+# Loading work.bresenham_DW01_add_1(fast)
+# Loading work.bresenham_DW01_add_2(fast)
+# Loading work.bresenham_DW01_add_3(fast)
+# Loading work.bresenham_DW01_add_4(fast)
+# Loading work.bresenham_DW01_add_5(fast)
+# Loading work.bresenham_DW01_add_6(fast)
+# Loading work.bresenham_DW01_add_7(fast)
+# Loading work.bresenham_DW01_add_8(fast)
+# Loading work.bresenham_DW01_add_9(fast)
+# Loading work.bresenham_DW01_add_10(fast)
+# Loading work.bresenham_DW01_inc_1(fast)
+# Loading work.bresenham_DW01_add_11(fast)
+# Loading work.bresenham_DW01_sub_3(fast)
+# Loading work.bresenham_DW01_sub_4(fast)
+# Loading work.bresenham_DW01_sub_5(fast)
+# Loading work.bresenham_DW01_sub_6(fast)
+# Loading work.clear(fast)
+# Loading work.flex_counter_NUM_CNT_BITS9(fast)
+# Loading work.flex_counter_NUM_CNT_BITS9_DW01_inc_0(fast)
+# Loading work.flex_counter_NUM_CNT_BITS8(fast)
+# Loading work.flex_counter_NUM_CNT_BITS8_DW01_inc_0(fast)
+# Loading work.AHB_MasterInterface(fast)
+# Loading work.memoryManager(fast)
+# Loading work.controller(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.mux2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.fax1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x2(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi21x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand3x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi22x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xnor2x1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.hax1(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx4(behavioral)#1
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor3x1(behavioral)#1
+# ** Warning: (vsim-8822) mapped/GPU.v(110): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/decode/add_193/U1_7
+# ** Warning: (vsim-8822) mapped/GPU.v(131): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/decode/add_192/U1_8
+# ** Warning: (vsim-8822) mapped/GPU.v(153): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/decode/add_181/U1_7
+# ** Warning: (vsim-8822) mapped/GPU.v(174): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/decode/add_180/U1_8
+# ** Warning: (vsim-8822) mapped/GPU.v(898): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/render/B/r535/U2_7
+# ** Warning: (vsim-8822) mapped/GPU.v(927): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/render/B/r533/U2_7
+# ** Warning: (vsim-8822) mapped/GPU.v(1959): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/render/B/r480/U1_15
+# ** Warning: (vsim-8822) mapped/GPU.v(1993): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/render/B/sub_223_2/U2_8
+# ** Warning: (vsim-8822) mapped/GPU.v(2024): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_GPU/DUT/render/B/sub_223/U2_8
+run 300000 ns
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/apb/\state_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/apb/\state_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/flip_buffer_c_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[23] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[23] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[22] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[22] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[21] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[21] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[20] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[20] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[19] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[19] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[18] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[18] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[17] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[17] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[16] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[16] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[16] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[16] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/received_op_c_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/render_done_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[15] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[14] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[13] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[12] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[11] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[10] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[9] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[8] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/rollover_flag_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[7] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[2] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[3] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[4] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[5] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[6] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/rollover_flag_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/ahb/\state_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/ahb/\state_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/memmanger/addr_sel_reg
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 8160 ps  Iteration: 0  Instance: /tb_GPU/DUT/ctlr/\c_state_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/apb/\state_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/apb/\state_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\state_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/flip_buffer_c_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\op_c_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[23] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[23] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[22] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[22] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[21] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[21] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[20] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[20] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[19] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[19] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[18] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[18] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[17] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[17] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[16] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[16] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[16] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[16] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\commandreg_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\color_c_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\start_c_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/\end1_c_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/decode/received_op_c_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/\state_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/R/render_done_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\bx_local_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[15] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\by_local_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[14] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[13] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[12] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[11] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[10] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[9] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\error_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/\count_out_reg[8] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter1/rollover_flag_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[7] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[2] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[3] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[4] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[5] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/\count_out_reg[6] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/C/Counter2/rollover_flag_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/ahb/\state_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/ahb/\state_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/memmanger/addr_sel_reg
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 8300 ps  Iteration: 0  Instance: /tb_GPU/DUT/ctlr/\c_state_reg[0] 
+# ** Info: set start
+#    Time: 75 ns  Scope: tb_GPU.setStart File: source/tb_GPU.sv Line: 124
+# ** Info: start x:   0, start y:   0
+#    Time: 75 ns  Scope: tb_GPU.setStart File: source/tb_GPU.sv Line: 125
+# ** Info: set end
+#    Time: 150 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 134
+# ** Info: start x: 319, start y: 239
+#    Time: 150 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 135
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 203160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 203198 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: sending color red
+#    Time: 225 ns  Scope: tb_GPU.setColor File: source/tb_GPU.sv Line: 115
+# ** Info: draw line
+#    Time: 300 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 30488160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 30488296 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: set end
+#    Time: 30495 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 134
+# ** Info: start x:   0, start y: 239
+#    Time: 30495 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 135
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 30548160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 30548195 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: draw line
+#    Time: 30645 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# (vsim-50) A call to system(python3 ./scripts/colorimg.py ./docs/render_buffer.txt ./docs/buffer00.png >/var/tmp/mtitmp.TGDVlE 2>&1) returned error code '2'.
+# The logfile contains the following messages:
+# python3: can't open file './scripts/colorimg.py': [Errno 2] No such file or directory
+# 
+# ** Info: set start
+#    Time: 60780 ns  Scope: tb_GPU.setStart File: source/tb_GPU.sv Line: 124
+# ** Info: start x:   0, start y:   0
+#    Time: 60780 ns  Scope: tb_GPU.setStart File: source/tb_GPU.sv Line: 125
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 60833160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 60833277 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: set end
+#    Time: 60840 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 134
+# ** Info: start x:   0, start y: 239
+#    Time: 60840 ns  Scope: tb_GPU.setEnd File: source/tb_GPU.sv Line: 135
+# ** Info: draw line
+#    Time: 60915 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 91103160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 91103160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 91103198 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 91103259 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: draw line
+#    Time: 91185 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 121373160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 121373160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 121373269 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 121373296 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 121433160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 121433160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 121433181 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 121433195 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Info: draw line
+#    Time: 121455 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 151643160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 151643160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 151643277 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 151643294 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: draw line
+#    Time: 151725 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 181913160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 181913160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 181913259 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 181913286 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 181973160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 181973160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 181973268 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 181973269 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Info: draw line
+#    Time: 181995 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 212183160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 212183160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 212183181 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 212183239 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: draw line
+#    Time: 212265 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 242453160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 242453160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 242453275 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 242453294 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 242513160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 242513160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 242513227 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '1' value
+#    Time: 242513286 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Info: draw line
+#    Time: 242535 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 272723160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance grabbed an invalid value and is propagating a metastable value
+#    Time: 272723160 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 272723268 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[1] 
+# ** Warning: DFFSR instance metastable output value decayed to a '0' value
+#    Time: 272723289 ps  Iteration: 0  Instance: /tb_GPU/DUT/render/B/\gradient_reg[0] 
+# ** Info: draw line
+#    Time: 272805 ns  Scope: tb_GPU.draw File: source/tb_GPU.sv Line: 164
+# End time: 16:17:51 on Dec 06,2017, Elapsed time: 2:57:58
+# Errors: 0, Warnings: 399

@@ -1,0 +1,202 @@
+// $Id: $
+// File name:   tb_decode.sv
+// Created:     10/2/2017
+// Author:      Gurmehar Makker
+// Lab Section: 337-02
+// Version:     1.0  Initial Design Entry
+// Description: Testbench Decode
+
+`timescale 1ns / 100ps
+
+module tb_decode();
+	localparam CLK_PERIOD   = 10;
+	localparam CHECK_DELAY  = 3;
+	localparam NUM_CNT_BITS = 4;
+	reg tb_clk, tb_n_rst, tb_scl, tb_sda_in, tb_rw_mode, tb_address_match, tb_stop_found, tb_start_found;
+	reg [7:0] tb_starting_byte;
+	decode DUT (.clk(tb_clk), .n_rst(tb_n_rst), .scl(tb_scl), .sda_in(tb_sda_in), .starting_byte(tb_starting_byte), .rw_mode(tb_rw_mode), .address_match(tb_address_match), .stop_found(tb_stop_found), .start_found(tb_start_found));
+	always begin
+		tb_clk = 0;
+		#(CLK_PERIOD / 2.0);
+		tb_clk = 1;
+		#(CLK_PERIOD / 2.0);
+	end
+	initial begin
+		// Test Case 1:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 1;
+		tb_starting_byte = 8'b11110000;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 0;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (!tb_rw_mode && tb_address_match && tb_start_found && !tb_stop_found) begin
+			$info("Test Case 1: PASSED");
+		end
+		else begin
+			$error("Test Case 1: FAILED");
+		end
+
+		// Test Case 2:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		tb_scl           = 0;
+		tb_sda_in        = 0;
+		tb_starting_byte = 8'b11110001;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (tb_rw_mode && tb_address_match && !tb_start_found && !tb_stop_found) begin
+			$info("Test Case 2: PASSED");
+		end
+		else begin
+			$error("Test Case 2: FAILED");
+		end
+
+		// Test Case 3:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		tb_scl           = 1;
+		tb_sda_in        = 0;
+		tb_starting_byte = 8'b11110000;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (!tb_rw_mode && tb_address_match && !tb_start_found && !tb_stop_found) begin
+			$info("Test Case 3: PASSED");
+		end
+		else begin
+			$error("Test Case 3: FAILED");
+		end
+	
+		// Test Case 4:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		tb_scl           = 0;
+		tb_sda_in        = 1;
+		tb_starting_byte = 8'b11111000;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (!tb_rw_mode && !tb_address_match && !tb_start_found && !tb_stop_found) begin
+			$info("Test Case 4: PASSED");
+		end
+		else begin
+			$error("Test Case 4: FAILED");
+		end
+		
+		// Test Case 5:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		tb_scl           = 0;
+		tb_sda_in        = 0;
+		tb_starting_byte = 8'b01110000;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (!tb_rw_mode && !tb_address_match && !tb_start_found && !tb_stop_found) begin
+			$info("Test Case 5: PASSED");
+		end
+		else begin
+			$error("Test Case 5: FAILED");
+		end
+		
+		// Test Case 6:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		tb_scl           = 0;
+		tb_sda_in        = 1;
+		tb_starting_byte = 8'b11111111;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (tb_rw_mode && !tb_address_match && !tb_start_found && !tb_stop_found) begin
+			$info("Test Case 6: PASSED");
+		end
+		else begin
+			$error("Test Case 6: FAILED");
+		end
+
+		// Test Case 7:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 0;
+		tb_starting_byte = 8'b11111101;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 1;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (tb_rw_mode && !tb_address_match && !tb_start_found && tb_stop_found) begin
+			$info("Test Case 7: PASSED");
+		end
+		else begin
+			$error("Test Case 7: FAILED");
+		end
+
+		// Test Case 8:
+		#CHECK_DELAY
+		tb_n_rst         = 0;
+		#CHECK_DELAY
+		tb_n_rst         = 1;
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 0;
+		tb_starting_byte = 8'b11010000;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		tb_scl           = 1;
+		tb_sda_in        = 1;
+		@(posedge tb_clk);
+		#CHECK_DELAY
+		assert (!tb_rw_mode && !tb_address_match && !tb_start_found && tb_stop_found) begin
+			$info("Test Case 8: PASSED");
+		end
+		else begin
+			$error("Test Case 8: FAILED");
+		end
+	end
+endmodule	
